@@ -11,6 +11,16 @@
           <code class="font-mono">/src/pages/index.vue</code>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/simple">
+          <h2>lien vers Page Simple</h2>
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/liste">
+          <h2>lien vers Page Liste</h2>
+        </router-link>
+      </li>
     </ul>
   </nav>
 
