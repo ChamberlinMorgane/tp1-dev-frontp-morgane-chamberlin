@@ -10,7 +10,6 @@
           lien vers
           <code class="font-mono">/src/pages/index.vue</code>
         </router-link>
-      </li>
       <li>
         <router-link class="text-red-600 underline" to="/simple">
           <h2>lien vers Page Simple</h2>
@@ -21,9 +20,17 @@
           <h2>lien vers Page Liste</h2>
         </router-link>
       </li>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/liste-fetch">
+          <h2>lien vers Page Liste-fetch</h2>
+        </router-link>
+      </li>
     </ul>
   </nav>
-
+  <Suspense>
+    <router-view class="m-2 border-2 p-2" />
+  </Suspense>
   <!-- Affiche les pages -->
   <router-view class="m-2 border-2 p-2" />
 </template>

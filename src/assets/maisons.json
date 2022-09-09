@@ -1,0 +1,28 @@
+[
+    {
+        "nom": "Json1",
+        "price": 630,
+        "favoris": true,
+        "txt": "maison",
+        "nbbath": 4,
+        "nbsize": "40 m²",
+        "img": "/public/house.jpg"
+    },
+    {
+        "nom": "Json2",
+        "price": 27,
+        "favoris": false,
+        "txt": "maison",
+        "nbbath": 3,
+        "nbsize": "100 m²",
+        "img": "/public/house2.jpg"
+    },
+    {
+        "nom": "Json3",
+        "price": 325,
+        "txt": "maison",
+        "nbbath": 1,
+        "nbsize": "200 m²",
+        "img": "/public/house3.jpg"
+    }
+]

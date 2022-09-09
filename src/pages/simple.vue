@@ -8,5 +8,5 @@
 <script setup lang="ts">
 import card from "../components/card.vue";
 
-const objet = { nom: "Maison haute gamme", price: 1150, favoris: true, txt: "maison à vendre", nbbath: 3, nbsize: "250 m²", img: "/public/house.jpg" }
+const objet = { nom: "Maison haute gamme", price: 1150, favoris: true, txt: "maison à vendre", nbbath: 3, nbsize: "250 m²", img: "house.jpg" }
 </script>
