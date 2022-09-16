@@ -5,6 +5,5 @@ import FormulaireOffreMaison from "../../components/FormulaireOffreMaison.vue";
 <template>
     <div>
         <FormulaireOffreMaison />
-        <h2>test</h2>
     </div>
 </template>
