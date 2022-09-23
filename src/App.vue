@@ -31,6 +31,16 @@
           <h2>lien vers Page New</h2>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/liste-supabase">
+          <h2>lien vers Liste supabase</h2>
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/login-logout">
+          <h2>lien vers Login-Logout</h2>
+        </router-link>
+      </li>
     </ul>
   </nav>
   <Suspense>
