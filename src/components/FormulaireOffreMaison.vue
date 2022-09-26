@@ -3,6 +3,10 @@ import { supabase } from '@/supabase';
 import { useRouter } from "vue-router";
 import { ref } from "@vue/reactivity";
 import Card from "./card.vue"
+
+
+
+const router = useRouter();
 const maison = ref({
     nom: "Paris", price: 600, //favoris: false
     txt: "Maison haut de gamme", nbbath: 4, nbsize: "282 m²", img: "/house.jpg"
@@ -11,6 +15,10 @@ const maison = ref({
 async function upsertMaison(dataForm, node) {
     const { data, error } = await supabase.from("Maison").upsert(dataForm);
     if (error) node.setErrors([error.message])
+    else {
+        node.setErrors([]);
+        router.push({ name: "edit-id", params: { id: data[0].id } });
+    }
 }
 </script>
 <template>
