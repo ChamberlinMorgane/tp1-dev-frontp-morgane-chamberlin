@@ -59,46 +59,51 @@
 
 
     <div class="hidden lg:flex justify-center bg-indigo-100">
-      <ul>
+      <ul class="flex space-x-5">
         <li>
-          <router-link class="text-red-600 underline" to="/">
+          <router-link class="text-black underline" to="/">
             lien vers
             <code class="font-mono">/src/pages/index.vue</code>
           </router-link>
         <li>
-          <router-link class="text-red-600 underline" to="/simple">
+          <router-link class="text-black underline" to="/simple">
             <h2>lien vers Page Simple</h2>
           </router-link>
         </li>
         <li>
-          <router-link class="text-red-600 underline" to="/liste">
+          <router-link class="text-black underline" to="/liste">
             <h2>lien vers Page Liste</h2>
           </router-link>
         </li>
         </li>
         <li>
-          <router-link class="text-red-600 underline" to="/liste-fetch">
+          <router-link class="text-black underline" to="/liste-fetch">
             <h2>lien vers Page Liste-fetch</h2>
           </router-link>
         </li>
         <li>
-          <router-link class="text-red-600 underline" to="/edit/new">
+          <router-link class="text-black underline" to="/edit/new">
             <h2>lien vers Page New</h2>
           </router-link>
         </li>
         <li>
-          <router-link class="text-red-600 underline" to="/liste-supabase">
+          <router-link class="text-black underline" to="/liste-supabase">
             <h2>lien vers Liste supabase</h2>
           </router-link>
         </li>
         <li>
-          <router-link class="text-red-600 underline" to="/login-logout">
+          <router-link class="text-black underline" to="/login-logout">
             <h2>lien vers Login-Logout</h2>
           </router-link>
         </li>
         <li>
-          <router-link class="text-red-600 underline" to="/edit/id">
+          <router-link class="text-black underline" to="/edit/id">
             <h2>lien vers la page ID</h2>
+          </router-link>
+        </li>
+        <li>
+          <router-link class="text-black underline" to="/quartier">
+            <h2>lien vers la page Index</h2>
           </router-link>
         </li>
       </ul>
