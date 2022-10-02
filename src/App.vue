@@ -2,108 +2,113 @@
   <nav>
     <div class=" lg:hidden flex items-center">
       <button v-on:click="menuNav = !menuNav " class=" py-6 px-3 ">
-        <Bars3Icon class="h-10 w-10 text-indigo-700" :class="{hidden: !menuNav}" />
+        <Bars3Icon class="h-10 w-10 text-red-600" :class="{hidden: !menuNav}" />
       </button>
     </div>
 
-    <div class="flex flex-row-reverse" :class="{hidden: menuNav }">
+    <div class="flex " :class="{hidden: menuNav }">
       <button v-if="!menuNav" v-on:click="menuNav = !menuNav" class=" py-6 px-3 ">
-        <XMarkIcon class="h-10 w-10 text-indigo-600" />
+        <XMarkIcon class="h-10 w-10 text-red-600" />
       </button>
 
 
-      <ul>
+      <ul class="justify-center m-auto">
         <li>
-          <router-link class="text-red-600 underline" to="/">
+          <router-link class="text-black underline" to="/">
             lien vers
-            <code class="font-mono">/src/pages/index.vue</code>
+            <code class="font-mono">Homepage</code>
           </router-link>
         <li>
-          <router-link class="text-red-600 underline" to="/simple">
-            <h2>lien vers Page Simple</h2>
-          </router-link>
-        </li>
-        <li>
-          <router-link class="text-red-600 underline" to="/liste">
-            <h2>lien vers Page Liste</h2>
-          </router-link>
-        </li>
-        </li>
-        <li>
-          <router-link class="text-red-600 underline" to="/liste-fetch">
-            <h2>lien vers Page Liste-fetch</h2>
+          <router-link class="text-black underline" to="/simple">
+            <h2>Page Simple</h2>
           </router-link>
         </li>
         <li>
-          <router-link class="text-red-600 underline" to="/edit/new">
-            <h2>lien vers Page New</h2>
+          <router-link class="text-black underline" to="/liste">
+            <h2>Page Liste</h2>
+          </router-link>
+        </li>
+        </li>
+        <li>
+          <router-link class="text-black underline" to="/liste-fetch">
+            <h2> Page Liste-fetch</h2>
           </router-link>
         </li>
         <li>
-          <router-link class="text-red-600 underline" to="/liste-supabase">
-            <h2>lien vers Liste supabase</h2>
+          <router-link class="text-black underline" to="/edit/new">
+            <h2> Page New</h2>
           </router-link>
         </li>
         <li>
-          <router-link class="text-red-600 underline" to="/login-logout">
-            <h2>lien vers Login-Logout</h2>
+          <router-link class="text-black underline" to="/liste-supabase">
+            <h2> Liste supabase</h2>
           </router-link>
         </li>
         <li>
-          <router-link class="text-red-600 underline" to="/edit/id">
-            <h2>lien vers la page ID</h2>
+          <router-link class="text-black underline" to="/login-logout">
+            <h2> Login-Logout</h2>
+          </router-link>
+        </li>
+        <li>
+          <router-link class="text-black underline" to="/edit/id">
+            <h2> page ID</h2>
+          </router-link>
+        </li>
+        <li>
+          <router-link class="text-black underline" to="/quartier">
+            <h2> page Index</h2>
           </router-link>
         </li>
       </ul>
     </div>
 
 
-    <div class="hidden lg:flex justify-center bg-indigo-100">
-      <ul class="flex space-x-5">
+    <div class="hidden lg:flex bg-indigo-100">
+      <ul class="flex space-x-4">
         <li>
           <router-link class="text-black underline" to="/">
             lien vers
-            <code class="font-mono">/src/pages/index.vue</code>
+            <code class="font-mono">Homepage</code>
           </router-link>
         <li>
           <router-link class="text-black underline" to="/simple">
-            <h2>lien vers Page Simple</h2>
+            <h2>Page Simple</h2>
           </router-link>
         </li>
         <li>
           <router-link class="text-black underline" to="/liste">
-            <h2>lien vers Page Liste</h2>
+            <h2> Page Liste</h2>
           </router-link>
         </li>
         </li>
         <li>
           <router-link class="text-black underline" to="/liste-fetch">
-            <h2>lien vers Page Liste-fetch</h2>
+            <h2> Page Liste-fetch</h2>
           </router-link>
         </li>
         <li>
           <router-link class="text-black underline" to="/edit/new">
-            <h2>lien vers Page New</h2>
+            <h2> Page New</h2>
           </router-link>
         </li>
         <li>
           <router-link class="text-black underline" to="/liste-supabase">
-            <h2>lien vers Liste supabase</h2>
+            <h2> Liste supabase</h2>
           </router-link>
         </li>
         <li>
           <router-link class="text-black underline" to="/login-logout">
-            <h2>lien vers Login-Logout</h2>
+            <h2>Login-Logout</h2>
           </router-link>
         </li>
         <li>
           <router-link class="text-black underline" to="/edit/id">
-            <h2>lien vers la page ID</h2>
+            <h2> page ID</h2>
           </router-link>
         </li>
         <li>
           <router-link class="text-black underline" to="/quartier">
-            <h2>lien vers la page Index</h2>
+            <h2> page Index</h2>
           </router-link>
         </li>
       </ul>
