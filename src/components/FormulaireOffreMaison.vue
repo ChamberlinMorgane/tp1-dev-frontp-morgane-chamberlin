@@ -7,10 +7,18 @@ import Card from "./card.vue"
 
 
 const router = useRouter();
-const maison = ref({
-    nom: "Paris", price: 600, //favoris: false
-    txt: "Maison haut de gamme", nbbath: 4, nbsize: "282 m²", img: "/house.jpg"
-});
+const maison = ref({});
+
+const props = defineProps(["id"]);
+if (props.id) {
+    // On charge les données de la maison
+    let { data, error } = await supabase
+        .from("Maison")
+        .select("*")
+        .eq("id", props.id);
+    if (error) console.log("n'a pas pu charger le table Maison :", error);
+    else maison.value = (data as any[])[0];
+}
 
 async function upsertMaison(dataForm, node) {
     const { data, error } = await supabase.from("Maison").upsert(dataForm);
